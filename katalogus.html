@@ -6,17 +6,16 @@
   <meta name="description" content="A Kriszta Virágműhely növénykatalógusa.">
   <title>Katalógus · Kriszta Virágműhely</title>
   <link rel="stylesheet" href="assets/css/style.css">
-  <script defer src="assets/js/novenyek.js"></script>
-  <script defer src="assets/js/katalogus.js"></script>
+  <script defer src="assets/js/katalogus.js?v=json"></script>
 </head>
 <body>
   <a class="skip" href="#tartalom">Ugrás a tartalomra</a>
   <header><div class="wrap header-inner"><a class="brand" href="index.html"><span class="mark" aria-hidden="true">K</span>Kriszta Virágműhely</a><nav aria-label="Főmenü"><a href="index.html">Főoldal</a><a href="katalogus.html" aria-current="page">Katalógus</a><a href="rendeles.html">Rendelés</a><a href="kapcsolat.html">Kapcsolat</a></nav></div></header>
   <main id="tartalom">
-<section class="page wrap"><h1>Növénykatalógus</h1><p class="intro">Keress magyar vagy latin név alapján, vagy válassz növénycsoportot.</p><p class="notice" id="keszlet">Mintakínálat korábbi ajánlatokból. A képek illusztrációk, az aktuális elérhetőségről érdeklődj a <a href="https://www.facebook.com/kriszta.viragmuhely/">Facebook-oldalon</a>.</p>
+<section class="page wrap"><h1>Növénykatalógus</h1><p class="intro">Keress magyar vagy latin név alapján, vagy válassz növénycsoportot.</p><p class="notice" id="keszlet" hidden>Mintakínálat korábbi ajánlatokból. A képek illusztrációk, az aktuális elérhetőségről érdeklődj a <a href="https://www.facebook.com/kriszta.viragmuhely/">Facebook-oldalon</a>.</p>
 <div class="filters" role="search" aria-label="Növények keresése"><label>Keresés<input id="kereses" type="search" placeholder="Például hortenzia"></label><label>Növénycsoport<select id="kategoria"><option value="">Összes növénycsoport</option></select></label></div>
-<p id="talalat" class="small" role="status"></p><div id="novenyek" class="grid"></div>
-<template id="novenykartya"><article class="card"><img src="" alt="" width="480" height="360" loading="lazy"><div class="card-body"><div class="eyebrow"></div><h2></h2><i></i><p class="description"></p></div></article></template>
+<p id="talalat" class="small" role="status">A katalógus betöltése…</p><div id="novenyek" class="grid"></div>
+<template id="novenykartya"><article class="card"><img alt="" width="480" height="360" loading="lazy"><div class="card-body"><div class="eyebrow"></div><h2></h2><i></i><p class="description"></p></div></article></template>
 <noscript>A katalógus megtekintéséhez engedélyezd a JavaScriptet, vagy érdeklődj a <a href="https://www.facebook.com/kriszta.viragmuhely/">Facebook-oldalon</a>.</noscript></section>
   </main>
   <footer><div class="wrap"><span>Kriszta Virágműhely · Algyő</span><a href="https://www.facebook.com/kriszta.viragmuhely/">Facebook</a></div></footer>

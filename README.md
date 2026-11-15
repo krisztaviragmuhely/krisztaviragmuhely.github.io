@@ -1,6 +1,6 @@
 # Kriszta Virágműhely
 
-Magyar nyelvű statikus honlapterv az algyői virágműhelynek. A megjelenést a Facebook-borító púderrózsaszín, pink és olívazöld színei, a kör alakú K monogram és a virágfotók ihlették. A honlap helyben is megnyitható az index.html fájllal.
+Magyar nyelvű statikus honlapterv az algyői virágműhelynek. A megjelenést a Facebook-borító púderrózsaszín, pink és olívazöld színei, a kör alakú K monogram és a virágfotók ihlették. A katalógust a közzétett honlapon vagy helyi HTTP-kiszolgálón (például `python3 -m http.server`) lehet tesztelni.
 
 | Fájl vagy mappa | Szerepe |
 | --- | --- |
@@ -8,15 +8,15 @@ Magyar nyelvű statikus honlapterv az algyői virágműhelynek. A megjelenést a
 | katalogus.html | Kereshető, növénycsoport szerint szűrhető kínálat. Kép, magyar név, latin név és rövid jellemzés minden kártyán. |
 | rendeles.html | A meglévő Google Forms rendelési lap beágyazva, közvetlen megnyitási lehetőséggel. |
 | kapcsolat.html | Algyői átvételi cím, térkép és Facebook-link a friss nyitvatartáshoz. |
-| assets/js/novenyek.js | A katalógus tartalma és készletállapota. |
+| data/novenyek.json | A katalógus tartalma és készletállapota. |
 | assets/js/katalogus.js | Keresés, szűrés és a kártyák megjelenítése. |
 | assets/css/style.css | Közös tipográfia, színpaletta és reszponzív elrendezés. |
-| assets/img/ | WebP képek korábbi virágműhelyes promóciós anyagokból. |
+| assets/img/ | A növényfotók feltöltési mappája. |
 | .nojekyll | A statikus fájlok közvetlen kiszolgálása GitHub Pages-en. |
 
 ## Készletfrissítés
 
-1. Az új képet másold az assets/img/ mappába, majd az assets/js/novenyek.js fájlban vedd fel a magyar és latin nevet, a növénycsoportot, a képfájl nevét és a rövid leírást.
+1. Az új képet másold az assets/img/ mappába, majd az data/novenyek.json fájlban vedd fel a magyar és latin nevet, a növénycsoportot, a képfájl nevét és a rövid leírást. A `kep` mezőbe csak a fájlnevet írd, például `hortenzia-rozsaszin.jpg`. Egyezzen a kis- és nagybetű, valamint a kiterjesztés is.
 2. A megerősített készletű növények állapota legyen `elerheto`, az elfogyottaké `elfogyott`. Az induló `minta` állapotú bejegyzéseket váltsd át vagy töröld az élő katalógus bekapcsolásakor. A mintaképeket cseréld az adott készleten lévő fajtáról készült képre.
 3. Írd be a frissítés dátumát a `frissitve` mezőbe, például `2026. november 15.`, majd mentsd a változtatásokat. A katalógus a készleten lévő tételeket jeleníti meg. A mintákat csak akkor mutatja, ha nincs elérhető tétel és maradt mintabejegyzés.
 
